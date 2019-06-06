@@ -25,5 +25,8 @@ yarn-error.log*
 #idea
 .idea/
 
+#env
+.env
+
 #README.old.md
 README.old.md
