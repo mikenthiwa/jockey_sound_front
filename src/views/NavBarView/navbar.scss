@@ -1,0 +1,42 @@
+.nav-container {
+  display: grid;
+  grid-template-columns: 0.8fr 2fr 0.4fr 0.15fr;
+  min-height: 52px;
+  box-shadow: 0 -2px 14px #273a4b;
+  background-color: #273a4b;
+
+  .nav-logo {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    color: #FFFFFF;
+    font-family: 'Anton', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+
+    .logo {
+      margin-right: 5px;
+      font-size: 2.0rem;
+    }
+  }
+
+
+    .nav-auth{
+      //background-color: red;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      color: #FFFFFF;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+
+      .sign-up {
+        padding: 6px 12px;
+        background-color: #4fa6d3;
+        border-radius: 4px;
+      }
+    }
+
+
+}

@@ -1,10 +1,11 @@
 import React, {Component} from 'react';
+import NavBar from '../../views/NavBarView';
 
-class Home extends Component {
+export class Home extends Component {
   render() {
     return (
       <div>
-        This is the home page
+        <NavBar />
       </div>
     );
   }
