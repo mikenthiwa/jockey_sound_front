@@ -1,0 +1,157 @@
+.signUp-form {
+  font-family: 'Anton', sans-serif;
+  .auth-label {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    color: #496482;
+    font-family: 'Anton', sans-serif;
+    font-weight: 500;
+    height: 30px;
+    border-bottom: 2.2px solid rgba(0, 0, 0, .1);
+
+    .signUp {
+      cursor: pointer;
+
+      &.active {
+        border-bottom: 2.8px solid #4fa6d3;
+        color: #4fa6d3;
+      }
+    }
+  }
+  .success-error{
+    margin-top: 15px;
+    .success {
+      &.active {
+        display: flex;
+        color: #50b348;
+        text-align: center;
+        justify-content: center;
+        font-family: 'Anton', sans-serif;
+        font-size: 13.5px
+      }
+    }
+
+    .failure {
+      display: none;
+
+      &.active{
+        color: rgb(247, 56, 56);
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        font-family: 'Anton', sans-serif;
+        font-size: 13.5px
+      }
+    }
+  }
+  .auth {
+    margin: 30px 25px 0 25px;
+
+    .facebook-auth {
+      button{
+        width: 100%;
+        padding: 10px 22px;
+        background-color: #3b5998;
+        font-size: 22px;
+        color: #FFFFFF;
+        border-radius: 4px;
+        margin-bottom: 20px;
+        cursor: pointer;
+        border: none;
+        outline: none;
+
+        .btn-facebook {
+          color: white;
+          justify-items: start;
+          margin-right: 12px;
+        }
+        span {
+          font-size: 15px;
+          position: relative;
+          top: -3px;
+        }
+      }
+
+      button:active {
+        outline: none;
+      }
+    }
+    .separator {
+      justify-content: center;
+      display: flex;
+      font-family: 'Anton', sans-serif;
+      color: #496482;
+      margin-bottom: 20px;
+      position: relative;
+
+
+      &:before, &:after {
+        content: '';
+        position: absolute;
+        width: 96px;
+        height: 1px;
+        top: 50%;
+        transform: translateY(-50%);
+        background: #D8DCDE;
+      }
+      &:before {
+        right: 0;
+      }
+
+      &:after {
+        left: 0;
+      }
+
+    }
+    .local-auth {
+      margin-bottom: 10px;
+      form input {
+        width: 100%;
+        height: 40px;
+        font-size: 14px;
+        margin-top: 14px;
+        margin-bottom: 2px;
+        border-radius: 4px;
+        border: 1px solid #D8DCDE;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        padding: 2px 4px;
+        color: #496482;
+      }
+
+      form {
+        .error {
+          color: red;
+          margin-top: 2px;
+          font-family: 'Anton', sans-serif;
+        }
+      }
+
+      .signUp-button {
+        width: 100%;
+        border-radius: 4px;
+        height: 40px;
+        background-color: #50b348;
+        border:none;
+        font-family: 'Anton', sans-serif;
+        color: white;
+        cursor: pointer;
+        outline: none;
+        margin-bottom: 12px;
+      }
+    }
+
+    small {
+      margin-top: 10px;
+      color: #496482;
+      a {
+        text-decoration: none;
+        color: #4fa6d3;
+      }
+      .terms {
+        margin-top: 10px;
+      }
+    }
+  }
+}
