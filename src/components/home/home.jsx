@@ -11,12 +11,11 @@ export class Home extends Component {
   render() {
     const {history} = this.props;
     const tokenData = JSON.parse(localStorage.getItem('jwt-data'));
-    console.log(tokenData);
     return (
       <div className={`home ${!tokenData ? 'not-authenticated': ''}`}>
         <NavBar isAuthenticated={tokenData}/>
         <Modal history={history}/>
-        <div className="intro-body">
+        <div className={`intro-body ${!tokenData ? 'active': 'inactive'}`}>
           <div className="intro">
             <span>The global community for audio culture</span>
             <small>Explore 15+ million radio shows, DJ mixes and podcasts made by passionate creators.</small>
