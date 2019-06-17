@@ -15,7 +15,7 @@ export class NavBar extends Component {
     const { openModal, isAuthenticated } = this.props;
     const { isSignUp } = this.state;
     return (
-      <div className="nav-container">
+      <div className={`nav-container ${isAuthenticated? 'active': ''}`}>
         <div className="nav-logo">
           <i className="far fa-play-circle logo" />
           <span>Jockeysound</span>

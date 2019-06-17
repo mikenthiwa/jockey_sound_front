@@ -1,9 +1,12 @@
 .nav-container {
   display: grid;
   grid-template-columns: 0.8fr 2fr 0.4fr 0.15fr;
-  min-height: 52px;
-  box-shadow: 0 -2px 14px #273a4b;
-  background-color: #273a4b;
+  height: 52px;
+
+  &.active {
+    background-color: #273a4b;
+    box-shadow: 0 -2px 14px #273a4b;
+  }
 
   .nav-logo {
     display: flex;
@@ -12,7 +15,7 @@
     color: #FFFFFF;
     font-family: 'Anton', sans-serif;
     font-size: 22px;
-    font-weight: 600;
+    font-weight: 500;
 
     .logo {
       margin-right: 5px;

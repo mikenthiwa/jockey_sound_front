@@ -46,8 +46,4 @@ describe('Home', () => {
     expect(component.state().store.getState().modal.isOpen).toEqual(true);
   });
 
-  it('should ', function () {
-    
-  });
-
 });
