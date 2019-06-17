@@ -1,0 +1,91 @@
+.home {
+
+  &.not-authenticated {
+    background: url("../../assets/images/jockeysoundhome.jpg") no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .intro-body {
+    margin: 5% auto 0 auto;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    letter-spacing: -1;
+    color: #fff;
+    font-weight: 300;
+
+    .intro {
+      font-size: 60px;
+      display: flex;
+      flex-direction: column;
+
+      span {
+        text-align: center;
+        color: #fff;
+        font-weight: 200;
+      }
+      small {
+        font-size: 15px;
+        text-align: center;
+        font-weight: 400;
+        opacity: .7;
+        margin-top: 8px;
+      }
+    }
+
+    .facebook-auth{
+      margin-top: 100px;
+      text-align: center;
+      display: flex;
+      justify-content: space-around;
+
+      .auth-button {
+        color: #fff;
+        transition: color .2s,background .2s;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        font-size: 18px;
+        cursor: pointer;
+        padding: 16px 24px;
+        font-family: 'Anton', sans-serif;
+
+        &.facebook-button {
+          background-color: #3b5998;
+
+          .fab {
+            margin-right: 8px;
+          }
+        }
+
+        &.listening-button {
+          background-color: #4fa6d3;
+        }
+
+      }
+
+      .facebook-button:hover {
+        background-color: #344978;
+      }
+
+      .listening-button:hover {
+        background-color: #2F8EBF;
+      }
+    }
+
+    .email-auth{
+      text-align: center;
+      margin-top: 50px;
+      font-weight: 500;
+      opacity: .7;
+      cursor: pointer;
+      transition: color .2s,background .2s;
+    }
+    .email-auth:hover {
+      opacity: 1;
+    }
+  }
+
+}
