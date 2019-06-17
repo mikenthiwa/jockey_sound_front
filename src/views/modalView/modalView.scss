@@ -1,0 +1,36 @@
+.modal-overlay {
+  background-color: rgba(0,0,0,.3);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 4px;
+    padding: 14px 0;
+    background-color: #F5F9FC;
+    max-width: 300px;
+
+    .times {
+      position: absolute;
+      text-align: right;
+      color: #9bb2c8;
+      right: 0;
+      margin-right: 15px;
+      cursor: pointer;
+      z-index: 1;
+      i{
+        cursor: pointer;
+      }
+    }
+  }
+
+  .modal-content {
+    border-radius: 4px;
+    position: relative;
+  }
+}

@@ -21,8 +21,7 @@
   }
 
 
-    .nav-auth{
-      //background-color: red;
+    .nav-auth {
       display: flex;
       flex-direction: row;
       justify-content: space-around;
@@ -30,13 +29,44 @@
       color: #FFFFFF;
       font-family: 'Montserrat', sans-serif;
       font-weight: 600;
+      font-size: 13px;
 
+      .username-cont {
+        position: relative;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+
+        .username {
+          margin: auto 0 auto 10px;
+          justify-content: center;
+          font-size: 14px;
+          cursor: pointer;
+        }
+
+        .fa-smile-beam {
+          font-size: 30px;
+        }
+
+        .fa-caret-down {
+          margin-left: 10px;
+          font-size: 17px;
+          cursor: pointer;
+        }
+      }
       .sign-up {
         padding: 6px 12px;
-        background-color: #4fa6d3;
         border-radius: 4px;
+        cursor: pointer;
+
+        &.active {
+          padding: 5px 7px;
+          background-color: #4fa6d3;
+        }
+
+        &.active:hover {
+          background: #2F8EBF;
+        }
       }
     }
-
-
 }
