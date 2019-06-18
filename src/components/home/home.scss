@@ -8,6 +8,8 @@
   }
 
   .intro-body {
+
+    &.active {
     margin: 5% auto 0 auto;
     max-width: 450px;
     display: flex;
@@ -26,6 +28,7 @@
         color: #fff;
         font-weight: 200;
       }
+
       small {
         font-size: 15px;
         text-align: center;
@@ -35,15 +38,17 @@
       }
     }
 
-    .facebook-auth{
+    .facebook-auth {
+
       margin-top: 100px;
       text-align: center;
       display: flex;
       justify-content: space-around;
 
+
       .auth-button {
         color: #fff;
-        transition: color .2s,background .2s;
+        transition: color .2s, background .2s;
         border: none;
         outline: none;
         border-radius: 5px;
@@ -75,17 +80,22 @@
       }
     }
 
-    .email-auth{
+    .email-auth {
       text-align: center;
       margin-top: 50px;
       font-weight: 500;
       opacity: .7;
       cursor: pointer;
-      transition: color .2s,background .2s;
+      transition: color .2s, background .2s;
     }
+
     .email-auth:hover {
       opacity: 1;
     }
   }
+    &.inactive {
+      display: none;
+    }
+}
 
 }
