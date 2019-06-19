@@ -96,6 +96,12 @@
     &.inactive {
       display: none;
     }
-}
+  }
+
+  .authenticated-home {
+    display: grid;
+    grid-template-columns: 0.7fr 2fr 1fr;
+    margin-top: 30px;
+  }
 
 }
