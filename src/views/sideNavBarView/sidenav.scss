@@ -1,0 +1,85 @@
+
+.side-nav-cont {
+  display: flex;
+  flex-direction: column;
+  padding-left: 80px;
+  font-family: 'Anton', sans-serif;;
+
+  .profile-cont {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    .profile-pic{
+      width: 35px;
+      height: 35px;
+      background: #263A4A;
+      border-radius: 2px;
+
+    }
+    .profile-name {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      margin-left: 10px;
+      margin-top: -5.5px;
+
+      .name {
+        margin-bottom: 5px;
+        color: #34495e;
+        font-size: 15px;
+        font-weight: 500;
+      }
+
+      .profile-link {
+        color: #8196a7;
+        font-size: 13px;
+        font-weight: 500;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .separator {
+    width: 100%;
+
+    background: #ebf0f2;
+  }
+
+  .profile-separator{
+    margin-top: 20px;
+    height: 2px;
+  }
+
+  .news-show-separator {
+    height: 1px;
+  }
+
+  .icon-name {
+    color: #8196a7;
+    font-weight: 600;
+    font-size: 12.5px;
+    letter-spacing: 0.5px;
+  }
+  .side-nav-icon {
+    color: #4fa6d3;
+    margin-right: 10px;
+  }
+
+  .name-position {
+    position: absolute;
+  }
+
+  .feed-show {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+
+  }
+  .favourite-cont {
+    margin-top: 20px;
+  }
+
+  .item-div {
+    margin-bottom: 20px;
+  }
+}

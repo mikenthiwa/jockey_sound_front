@@ -44,7 +44,7 @@ export class NavBar extends Component {
 
 NavBar.propTypes = {
   openModal: PropType.func,
-  isAuthenticated: PropType.string
+  isAuthenticated: PropType.object
 };
 
 const mapDispatchToProps = () => ({
@@ -55,4 +55,4 @@ const mapStateToProps = state => ({
   modal: state.modal
 });
 
-export default connect(mapDispatchToProps, mapDispatchToProps())(NavBar);
+export default connect(mapStateToProps, mapDispatchToProps())(NavBar);
