@@ -3,7 +3,8 @@ import PropType from 'prop-types';
 import {connect} from 'react-redux';
 import Modal from '../modal/modal';
 import NavBar from '../../views/NavBarView';
-import SideNav from '../../views/sideNavBarView/sideNavBar'
+import SideNav from '../../views/sideNavBarView/sideNavBar';
+import Feed from '../../views/feed/feed';
 import 'toastr';
 import './home.scss';
 
@@ -35,10 +36,11 @@ export class Home extends Component {
 
   renderAuthHomeBody = () => {
     const tokenData = JSON.parse(localStorage.getItem('jwt-data'));
-    const {username} = tokenData;
+    const {username = ''} = tokenData;
     return (
       <div className="authenticated-home">
         <SideNav username={username} />
+        <Feed />
       </div>
     )
   };
